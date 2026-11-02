@@ -1,0 +1,45 @@
+{
+  "n_data": 10935,
+  "svm": {
+    "accuracy": 0.7462277091906722,
+    "macro_precision": 0.6112604249375849,
+    "macro_recall": 0.6264243419415833,
+    "macro_f1": 0.586863919654172,
+    "weighted_f1": 0.7862768103893167,
+    "precision_negatif": 0.808868501529052,
+    "precision_netral": 0.10290237467018469,
+    "precision_positif": 0.9220103986135182,
+    "recall_negatif": 0.6514778325123153,
+    "recall_netral": 0.3939393939393939,
+    "recall_positif": 0.8338557993730408,
+    "f1_negatif": 0.7216916780354706,
+    "f1_netral": 0.16317991631799164,
+    "f1_positif": 0.8757201646090536
+  },
+  "bilstm_mean": {
+    "accuracy": 0.7737540009144948,
+    "macro_precision": 0.6179826071528198,
+    "macro_recall": 0.6408037683899753,
+    "macro_f1": 0.6075502150210073,
+    "weighted_f1": 0.8038479827893772
+  },
+  "delta_macro_f1": -0.020686295366835306,
+  "ci95": [
+    -0.036907438262994,
+    -0.0045157898493634226
+  ],
+  "best_svm": {
+    "ngram": "(1, 1)",
+    "strategi": "OvO",
+    "kernel": "linear",
+    "C": "0.1",
+    "val_macro_f1": "0.6087814239890411"
+  },
+  "best_bilstm": {
+    "lr": 0.001,
+    "units": 64.0,
+    "dropout": 0.5,
+    "epoch_terbaik": 3.0,
+    "val_macro_f1": 0.6237817520901424
+  }
+}
